@@ -22,11 +22,11 @@ class School
   end 
   
   def sort 
-  new_hash = {}
-  roster.each do |grade, name| 
-    new_hash[grade] = name.sort 
+    temp_sort_hash = {}
+      roster.each do |grade, name| 
+      temp_sort_hash[grade] = name.sort 
   end 
-  new_hash
+  temp_sort_hash
 end 
   
   
