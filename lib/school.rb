@@ -21,4 +21,13 @@ class School
     end 
   end 
   
+  def sort 
+  new_hash = {}
+  roster.each do |grade, name| 
+    new_hash[grade] = name.sort 
+  end 
+  new_hash
+end 
+  
+  
 end
