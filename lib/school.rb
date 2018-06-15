@@ -14,7 +14,7 @@ class School
   end
    
   def grade(input_number)
-    roster.detect do |grade, name| 
+    roster.find do |grade, name| 
       if input_number == grade
         return name 
       end 
