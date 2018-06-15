@@ -14,7 +14,7 @@ class School
   end
    
   def grade(input_number)
-    roster.eachnclude? do |grade, name| 
+    roster.each do |grade, name| 
       if input_number == grade
         return name 
       end 
