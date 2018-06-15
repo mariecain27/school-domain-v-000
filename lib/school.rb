@@ -30,8 +30,3 @@ class School
   end 
   temp_sort_hash
 end 
-  
-      # this sort of means #=> a || a = b ... or #=> x || x = y
-    # it's freak'n weird
-  
-end
