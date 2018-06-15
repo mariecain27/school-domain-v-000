@@ -10,9 +10,9 @@ class School
   
   def add_student(name, grade)
     #roster[grade] ||= []
-    
-    
-    roster[grade] << name
+    #roster[grade] << name
+  roster = Hash.new { |hash, key| hash[key] = [] }
+  roster[:grade] << name
   end
    
   def grade(input_number)
