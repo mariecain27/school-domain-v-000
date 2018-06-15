@@ -28,6 +28,7 @@ class School
       roster.each do |grade, name| 
         temp_sort_hash[grade] = name.sort 
       end 
+  end
   temp_sort_hash
   end
 end
