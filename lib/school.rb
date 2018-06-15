@@ -26,7 +26,8 @@ class School
   def sort 
     temp_sort_hash = {}
       roster.each do |grade, name| 
-      temp_sort_hash[grade] = name.sort 
-  end 
+        temp_sort_hash[grade] = name.sort 
+      end 
   temp_sort_hash
-end 
+  end
+end
