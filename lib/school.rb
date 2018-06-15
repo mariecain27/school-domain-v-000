@@ -9,10 +9,8 @@ class School
   end
   
   def add_student(name, grade)
-    #roster[grade] ||= []
-    #roster[grade] << name
-  roster = Hash.new { |hash, key| hash[key] = [] }
-  roster[:grade] << name
+    roster[grade] ||= []
+    roster[grade] << name
   end
    
   def grade(input_number)
@@ -28,7 +26,6 @@ class School
       roster.each do |grade, name| 
         temp_sort_hash[grade] = name.sort 
       end 
-  end
   temp_sort_hash
-
+  end
 end
